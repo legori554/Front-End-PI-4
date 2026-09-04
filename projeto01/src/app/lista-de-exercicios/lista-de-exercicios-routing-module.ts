@@ -3,12 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { Exercicio01 } from './exercicio01/exercicio01';
 import { Exercicio02 } from './exercicio02/exercicio02';
 import { Exercicio03 } from './exercicio03/exercicio03';
+import { Exercicio04 } from './exercicio04/exercicio04';
  
 
 const routes: Routes = [
   { path: 'exercicio01', component: Exercicio01 },
   { path: 'exercicio02', component: Exercicio02 },
-  { path: 'exercicio03', component: Exercicio03}
+  { path: 'exercicio03', component: Exercicio03},
+  { path: 'exercicio04', component: Exercicio04}
 ];
 
 @NgModule({
