@@ -4,7 +4,15 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: 'categoria',
-    loadChildren: () => import('./categoria/categoria-routing-module').then(m => m.CategoriaRoutingModule)
+    loadChildren: () =>
+      import('./categoria/categoria-module')
+        .then(m => m.CategoriaModule)
+  },
+  {
+    path: 'lista-de-exercicios',
+    loadChildren: () =>
+      import('./lista-de-exercicios/lista-de-exercicios-module')
+        .then(m => m.ListaDeExerciciosModule)
   }
 ];
 
@@ -12,4 +20,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
