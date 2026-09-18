@@ -1,0 +1,13 @@
+<p *ngIf="usuarioLogado; else naoLogado">
+  Usuário autenticado
+</p>
+
+<ng-template #naoLogado>
+  <p>Acesso não autorizado</p>
+</ng-template>
+
+<button (click)="alternarLogin()">
+  <span *ngIf="!usuarioLogado">Entrar</span>
+  <span *ngIf="usuarioLogado">Sair</span>
+</button>
+

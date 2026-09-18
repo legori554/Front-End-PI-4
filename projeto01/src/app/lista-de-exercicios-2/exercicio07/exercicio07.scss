@@ -1,0 +1,26 @@
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.cor-par {
+  background-color: lightblue;
+}
+
+.cor-impar {
+  background-color: lightgray;
+}
+
+.primeira {
+  font-weight: bold;
+  color: darkblue;
+}
+
+.ultima {
+  border: 3px solid red;
+}
